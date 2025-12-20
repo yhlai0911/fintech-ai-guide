@@ -2,7 +2,7 @@ import { memo, useState, useCallback } from 'react';
 import { tools } from '../../data/tools';
 
 const GearTab = memo(function GearTab() {
-  const [activeTool, setActiveTool] = useState('aistudio');
+  const [activeTool, setActiveTool] = useState('notebooklm');
 
   const handleCopyPrompt = useCallback((prompt) => {
     navigator.clipboard.writeText(prompt.replace(/[「」]/g, ''));

@@ -1,25 +1,4 @@
 export const tools = {
-  aistudio: {
-    name: 'Google AI Studio',
-    icon: '🤖',
-    color: 'from-blue-600 to-indigo-500',
-    desc: '建立 AI 原型 → 測試 Gemini API → 實作金融應用',
-    url: 'https://aistudio.google.com',
-    steps: [
-      { title: '1. 登入 AI Studio', content: '用 Google 帳號登入 aistudio.google.com' },
-      { title: '2. 建立新專案', content: '點「Create new prompt」→ 選擇 Chat 或 Freeform' },
-      { title: '3. 設計 Prompt', content: '輸入金融科技相關的系統提示詞' },
-      { title: '4. 測試對話', content: '測試 AI 對金融問題的回答品質' },
-      { title: '5. 調整參數', content: '調整 Temperature、Top-P 等參數優化輸出' },
-      { title: '6. 匯出程式碼', content: '點「Get code」取得 Python/Node.js 程式碼' },
-    ],
-    prompts: [
-      '「你是一個金融科技顧問，請分析 LINE Pay 的商業模式」',
-      '「請評估這個投資組合的風險：[貼上持股]」',
-      '「請用簡單的話解釋什麼是 DeFi」',
-      '「幫我設計一個信用評分的評估邏輯」',
-    ],
-  },
   notebooklm: {
     name: 'NotebookLM',
     icon: '📘',

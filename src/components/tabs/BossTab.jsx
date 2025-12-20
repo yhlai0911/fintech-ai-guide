@@ -38,16 +38,9 @@ const BossTab = memo(function BossTab() {
           <div className="p-5 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 border border-cyan-500/20">
             <div className="flex justify-between items-center mb-2">
               <span className="font-bold">案例分析深度</span>
-              <span className="text-cyan-400 font-bold text-xl">25%</span>
+              <span className="text-cyan-400 font-bold text-xl">30%</span>
             </div>
             <p className="text-sm text-white/60">分析金融科技案例是否深入、有洞察</p>
-          </div>
-          <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 border border-blue-500/20">
-            <div className="flex justify-between items-center mb-2">
-              <span className="font-bold">AI Studio 實作</span>
-              <span className="text-blue-400 font-bold text-xl">20%</span>
-            </div>
-            <p className="text-sm text-white/60">AI 原型設計合理、有實用價值</p>
           </div>
           <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 border border-purple-500/20">
             <div className="flex justify-between items-center mb-2">
@@ -58,10 +51,17 @@ const BossTab = memo(function BossTab() {
           </div>
           <div className="p-5 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-500/5 border border-pink-500/20">
             <div className="flex justify-between items-center mb-2">
-              <span className="font-bold">結論與 AI 反思</span>
-              <span className="text-pink-400 font-bold text-xl">25%</span>
+              <span className="font-bold">AI 使用反思</span>
+              <span className="text-pink-400 font-bold text-xl">20%</span>
             </div>
-            <p className="text-sm text-white/60">有自己觀點、AI 使用反思具體</p>
+            <p className="text-sm text-white/60">說明怎麼用 AI、有沒有抓到 AI 的錯</p>
+          </div>
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-500/20 to-amber-500/5 border border-amber-500/20">
+            <div className="flex justify-between items-center mb-2">
+              <span className="font-bold">緒論與結論</span>
+              <span className="text-amber-400 font-bold text-xl">20%</span>
+            </div>
+            <p className="text-sm text-white/60">動機清楚、有自己觀點</p>
           </div>
           <div className="md:col-span-2 p-5 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 border border-emerald-500/20">
             <div className="flex justify-between items-center mb-2">
@@ -69,33 +69,6 @@ const BossTab = memo(function BossTab() {
               <span className="text-emerald-400 font-bold text-xl">10%</span>
             </div>
             <p className="text-sm text-white/60">準時繳交、內容完整</p>
-          </div>
-        </div>
-      </div>
-
-      {/* AI Studio Tips */}
-      <div className="bg-gradient-to-r from-blue-500/20 via-indigo-500/20 to-purple-500/20 rounded-3xl p-8 border border-white/10">
-        <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
-          <span className="text-3xl">🤖</span> Google AI Studio 實作怎麼寫才能拿高分？
-        </h2>
-        <div className="grid md:grid-cols-2 gap-4 text-white/80">
-          <div className="p-4 bg-white/5 rounded-xl">
-            <p className="font-bold text-emerald-400 mb-1">✅ 要寫的</p>
-            <ul className="text-sm space-y-1">
-              <li>• 你設計了什麼 AI 應用？解決什麼問題？</li>
-              <li>• System Prompt 是怎麼設計的？</li>
-              <li>• 測試結果如何？有什麼限制？</li>
-              <li>• 附上 AI Studio 介面截圖 2-3 張</li>
-            </ul>
-          </div>
-          <div className="p-4 bg-white/5 rounded-xl">
-            <p className="font-bold text-red-400 mb-1">❌ 不要寫</p>
-            <ul className="text-sm space-y-1">
-              <li>• 「我用 AI Studio 做了一個機器人」（太籠統）</li>
-              <li>• 只貼截圖沒有說明設計思路</li>
-              <li>• 沒有說明 AI 回答的限制或錯誤</li>
-              <li>• 完全沒有測試對話的範例</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -111,7 +84,7 @@ const BossTab = memo(function BossTab() {
             <ul className="text-sm space-y-1">
               <li>• 用了哪些工具？各用在什麼地方？</li>
               <li>• AI 有沒有給錯誤答案？你怎麼發現的？</li>
-              <li>• 你怎麼驗證 AI 的回答？</li>
+              <li>• 你怎麼驗證和修正 AI 的回答？</li>
               <li>• 附上 2-3 張對話截圖</li>
             </ul>
           </div>

@@ -107,8 +107,8 @@ const MapTab = memo(function MapTab({ activeWeek, setActiveWeek, completedTasks,
           </p>
           <p className="text-white/60 mt-2 text-sm">
             {activeWeek === 1
-              ? '用 NotebookLM Deep Research 蒐集資料，並在 Google AI Studio 建立 AI 原型。記得準時繳交大綱！'
-              : '完成正文撰寫、加入 AI Studio 實作說明與截圖。最後匯出 PDF 繳交！'}
+              ? '用 NotebookLM Deep Research 蒐集資料，開始規劃報告架構。記得準時繳交大綱！'
+              : '完成正文撰寫、加入 AI 使用反思與截圖。最後匯出 PDF 繳交！'}
           </p>
         </div>
       </div>

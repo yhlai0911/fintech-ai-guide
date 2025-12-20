@@ -14,7 +14,7 @@ const QuestTab = memo(function QuestTab() {
         <p className="text-white/70 text-lg leading-relaxed mb-6">
           選擇一個<span className="text-cyan-400 font-semibold">金融科技領域</span>，
           分析其應用案例與發展趨勢，
-          並透過 <span className="text-purple-400 font-semibold">Google AI 工具 + AI Studio</span> 協助完成 PDF 報告。
+          並透過 <span className="text-purple-400 font-semibold">Google AI 工具</span>協助完成 PDF 報告。
         </p>
 
         <div className="grid md:grid-cols-3 gap-4">
@@ -32,37 +32,6 @@ const QuestTab = memo(function QuestTab() {
             <div className="text-3xl mb-2">⏰</div>
             <h3 className="font-bold mb-1">任務時間</h3>
             <p className="text-sm text-white/60">兩週（第一週交大綱）</p>
-          </div>
-        </div>
-      </div>
-
-      {/* AI Studio Highlight */}
-      <div className="bg-gradient-to-r from-blue-600/20 to-indigo-500/20 rounded-3xl p-8 border border-blue-500/30">
-        <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
-          <span className="text-3xl">🤖</span> 特別任務：Google AI Studio 實作
-        </h2>
-        <p className="text-white/70 mb-4">
-          本課程要求使用 <span className="text-blue-400 font-semibold">Google AI Studio</span> 建立一個簡單的 AI 應用原型，
-          並在報告中說明你的實作過程。
-        </p>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-white/5 rounded-xl p-4">
-            <h4 className="font-bold mb-2">💡 實作建議</h4>
-            <ul className="text-sm text-white/60 space-y-1">
-              <li>• 金融問答機器人</li>
-              <li>• 投資風險評估助手</li>
-              <li>• 金融新聞摘要生成器</li>
-              <li>• 信用評分解釋器</li>
-            </ul>
-          </div>
-          <div className="bg-white/5 rounded-xl p-4">
-            <h4 className="font-bold mb-2">📸 報告需附</h4>
-            <ul className="text-sm text-white/60 space-y-1">
-              <li>• AI Studio 介面截圖</li>
-              <li>• Prompt 設計說明</li>
-              <li>• 測試對話截圖</li>
-              <li>• 應用效果評估</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -115,15 +84,6 @@ const QuestTab = memo(function QuestTab() {
       <div className="bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-white/10">
         <h2 className="text-2xl font-bold mb-4 text-center">🚀 快速傳送門</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap">
-          <a href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer"
-            className="w-full md:w-auto px-6 py-4 bg-white/10 hover:bg-white/20 rounded-xl font-medium transition-all flex items-center justify-center gap-3 group">
-            <span className="text-2xl">🤖</span>
-            <div className="text-left">
-              <div>Google AI Studio</div>
-              <div className="text-xs text-white/50">建立 AI 原型</div>
-            </div>
-            <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-          </a>
           <a href="https://notebooklm.google.com" target="_blank" rel="noopener noreferrer"
             className="w-full md:w-auto px-6 py-4 bg-white/10 hover:bg-white/20 rounded-xl font-medium transition-all flex items-center justify-center gap-3 group">
             <span className="text-2xl">📘</span>

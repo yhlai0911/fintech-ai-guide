@@ -10,10 +10,9 @@ const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 const GRADING_CRITERIA = [
   { id: 'background', name: '緒論與動機', weight: 10, icon: '📝', description: '研究動機清楚、主題選擇合理' },
   { id: 'literature', name: '文獻探討', weight: 20, icon: '📚', description: '文獻整理完整、來源可靠' },
-  { id: 'analysis', name: '案例分析', weight: 25, icon: '🔍', description: '分析深入、有洞察力' },
-  { id: 'aistudio', name: 'AI Studio 實作', weight: 20, icon: '🤖', description: '實作完整、設計合理' },
-  { id: 'conclusion', name: '結論與建議', weight: 15, icon: '💡', description: '有自己觀點、建議可行' },
-  { id: 'reflection', name: 'AI 使用反思', weight: 10, icon: '🤔', description: '說明具體、有批判思考' },
+  { id: 'analysis', name: '案例分析', weight: 30, icon: '🔍', description: '分析深入、有洞察力' },
+  { id: 'conclusion', name: '結論與建議', weight: 20, icon: '💡', description: '有自己觀點、建議可行' },
+  { id: 'reflection', name: 'AI 使用反思', weight: 20, icon: '🤔', description: '說明具體、有批判思考' },
 ];
 
 const GradeTab = memo(function GradeTab() {
@@ -37,19 +36,17 @@ const GradeTab = memo(function GradeTab() {
 ## 評分標準（滿分 100 分）：
 1. 緒論與動機（10%）：研究動機是否清楚？主題選擇是否合理？
 2. 文獻探討（20%）：是否整理 3-5 篇相關文獻或案例？來源是否可靠？
-3. 案例分析（25%）：金融科技案例分析是否深入？有無洞察力？
-4. AI Studio 實作（20%）：是否說明 Google AI Studio 的應用過程？設計是否合理？
-5. 結論與建議（15%）：是否有自己的觀點？建議是否可行？
-6. AI 使用反思（10%）：是否說明使用了哪些 AI 工具？有無批判性思考？
+3. 案例分析（30%）：金融科技案例分析是否深入？有無洞察力？
+4. 結論與建議（20%）：是否有自己的觀點？建議是否可行？
+5. AI 使用反思（20%）：是否說明使用了哪些 AI 工具？有無批判性思考？
 
 ## 請以 JSON 格式回覆，包含：
 {
   "background": { "score": 0-10, "comment": "評語" },
   "literature": { "score": 0-20, "comment": "評語" },
-  "analysis": { "score": 0-25, "comment": "評語" },
-  "aistudio": { "score": 0-20, "comment": "評語" },
-  "conclusion": { "score": 0-15, "comment": "評語" },
-  "reflection": { "score": 0-10, "comment": "評語" },
+  "analysis": { "score": 0-30, "comment": "評語" },
+  "conclusion": { "score": 0-20, "comment": "評語" },
+  "reflection": { "score": 0-20, "comment": "評語" },
   "total": 0-100,
   "overall": "整體評語與改進建議"
 }
